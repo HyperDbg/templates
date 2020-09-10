@@ -1,0 +1,102 @@
+% This work may be distributed and/or modified under the
+% conditions of the GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007% 
+%
+% This work consists of the file reporthyperdbg.cls and the demo
+% file reporthyperdbg.tex
+%% 
+%%
+%% reporthyperdbg.tex
+%% for usage please see the  reporthyperdbg.cls: 
+%% Author:  Saleh Khalaj,Sina Karvandi, Monfared
+%%Email : saleh@iranian.computer, sina@rayanfam.com
+
+%% https://github.com/HyperDbg
+%% Version: 1.0
+%%
+\documentclass[12pt]{reporthyperdbg}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{ref.bib}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Add a note command here
+%% provided in the class. 
+\newcommand{\cmNote}[1]{\ColorNote{blue}{cm}{#1}}
+
+
+\begin{document}
+\pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+
+\newcommand{\HLine}{\rule{\linewidth}{0.5mm}} % a simple example of command for a horizontal line 
+
+\center % Center everything on the page
+ 
+
+\textsc{\LARGE HyperDbg Debugger}\\[1.5cm] 
+\textsc{\Large A debugger designed for analyzing, fuzzing and reversing
+}\\[0.5cm] 
+\textsc{\large version 0.1.0.0}\\[0.5cm] 
+
+
+\HLine \\[0.4cm]
+{ \huge \bfseries The Main Title Here}\\[0.4cm] %
+\HLine \\[1.5cm]
+ 
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Website :}\\
+\url{https://hyperdbg.com} 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Source code:} \\
+\url{https://github.com/HyperDbg}
+\end{flushright}
+\end{minipage}\\[2cm]
+
+
+
+{\large \today}\\[2cm] 
+
+\includegraphics[scale=0.1]{hyperdbgcat.png}\\[1cm]
+
+\vfill 
+
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%
+
+\maketitle
+A general description and abstract of the report for a particular feature of \textbf{HyperDbg}\cite{hyperdbg}
+
+\vspace{0.5cm}
+\makerule
+
+\section{Section 1}
+
+
+\subsection{Subsection-1}
+
+\section{Section 2}
+
+\subsection{Detailed Implementation}
+
+
+ \printbibliography
+
+
+\end{document}
+
